@@ -11,77 +11,87 @@ function NavBar(props){
     console.log('nav bar prop current user', props.currentUser)
   
   return (
-   <div className=" navbar fixed-top navbar-dark bg-primary">
-   
-          <div className="navDiv"> 
-          
+    <div className=" navbar fixed-top navbar-dark bg-primary">
+        
+        <div className="navDiv"> 
+            
+            <Link to="/items"><div className="navCLass " >Home</div></Link>
 
-          <Link to="/items"><div className="navCLass " >Home</div></Link>
-
-
-          <Link to="/items/sell">
-              <div className="navCLass">Sell</div>
-          </Link>
-          
-          
-        <div className="navCLassFilter "> 
-            <FilterBar handleChange={props.handleChange} 
-                       searchTerm={props.searchTerm}
-                       sortChoice={props.sortChoice} /> 
-        </div>
-        <Link to="/watchlist">
-            <div className="navCLass">
-            { props.currentUser && props.watchlistItems.length > 0 ? 
-                <span className="shopItemNum">
-                    {props.watchlistItems
-                     .filter(xxx => xxx.watchlist.user_id===props.currentUser.id)
-                     .length}
-                </span> 
-                : null
+            {props.currentUser!==null && props.currentUser.username==="Nadi" ?
+                <Link to="/items/sell">
+                    <div className="navCLass">Sell</div>
+                </Link>
+            :
+                null
             }
-            watchlist 
+
+            <div className="navCLassFilter "> 
+                <FilterBar handleChange={props.handleChange} 
+                        searchTerm={props.searchTerm}
+                        sortChoice={props.sortChoice} /> 
             </div>
-        </Link>
 
-        <Link to="/shoppingcart">
-            <div className="navCLass">
-            { props.currentUser && props.shoppingCartItems.length > 0 ? 
-                <span className="shopItemNum">
-                    {props.shoppingCartItems
-                     .filter(xxx => xxx.shopping_cart_id === props.currentUser.id)
-                     .length}
-                </span> 
-                : null 
-            }
-             Shop 🛒</div>
-        </Link>
+            {props.currentUser!==null && props.currentUser.username==="Nadi" ?
+                null:
+                <div>
 
-        <Link to="/items/summary">
-            <div className="navCLass">
-            { props.currentUser && (props.offers.filter(xxx => xxx.item.user_id === props.currentUser.id)
-                     .length) > 0 ? 
-                     <div>
-                        <span className="shopItemNum">
-                            {props.offers
-                            .filter(xxx => xxx.item.user_id === props.currentUser.id)
-                            .length} </span> 
-                         Offers 
-                     </div>
-                :<span> history </span> 
-            }
                 
-            </div> 
-        </Link>
 
-        <Link to="/profile">
-            <div className="navCLass">Profile</div>
-        </Link>
-          <div className="navBarLogin"> 
-            <UserController  logout={props.logout} currentUser={props.currentUser} /> </div>
+                <Link to="/watchlist">
+                    <div className="navCLass">
+                    { props.currentUser && props.watchlistItems.length > 0 ? 
+                        <span className="shopItemNum">
+                            {props.watchlistItems
+                            .filter(xxx => xxx.watchlist_id===props.currentUser.id)
+                            .length}
+                        </span> 
+                        : null
+                    }
+                    watchlist 
+                    </div>
+                </Link>
 
-      </div>
-      </div>
-      
+                <Link to="/shoppingcart">
+                    <div className="navCLass">
+                    { props.currentUser && props.shoppingCartItems.length > 0 ? 
+                        <span className="shopItemNum">
+                            {props.shoppingCartItems
+                            .filter(xxx => xxx.shopping_cart_id === props.currentUser.id)
+                            .length}
+                        </span> 
+                        : null 
+                    }
+                    Shop 🛒</div>
+                </Link>
+                </div>
+            }
+
+            <Link to="/items/summary">
+                <div className="navCLass">
+                    { props.currentUser && (props.offers.filter(xxx => xxx.item.user_id === props.currentUser.id)
+                            .length) > 0 ? 
+                            <div>
+                                <span className="shopItemNum">
+                                    {props.offers
+                                    .filter(xxx => xxx.item.user_id === props.currentUser.id)
+                                    .length} </span> 
+                                Offers 
+                            </div>
+                        :<span> history </span> 
+                    }
+                </div> 
+            </Link>
+
+            <Link to="/profile">
+                <div className="navCLass">Profile</div>
+            </Link>
+            <div className="navBarLogin"> 
+                <UserController  logout={props.logout} currentUser={props.currentUser} /> </div>
+
+        </div>
+    </div>
+    
+     
   )
 }
 

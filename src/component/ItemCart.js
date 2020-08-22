@@ -14,7 +14,7 @@ class ItemCart extends Component{
         >
             <img className = " img-fluid" src={this.props.imgUrl} />
             <p>title: {this.props.title}</p>
-            <p>price: ${this.props.price}</p>
+            <p>price: {this.props.price} FRS CFA</p>
             <p>Location : {this.props.location}</p>
             <p>Condition: {this.props.condition} </p>
           

@@ -8,8 +8,8 @@ import logo from '../logo.svg';
 class Offer extends Component {
   handleDelete = () => {
     let id  = this.props.offer.id;              
-    // fetch(`https://corona-backend1.herokuapp.com/api/v1/offers/${id}`, {
-      fetch(`http://localhost:3000/api/v1/offers/${id}`, {
+    fetch(`https://ironladyback.herokuapp.com/api/v1/offers/${id}`, {
+      // fetch(`http://localhost:3000/api/v1/offers/${id}`, {
         method: "DELETE"
     })
     .then(resp => resp.json())
@@ -22,8 +22,8 @@ class Offer extends Component {
   handleAcceptOffer = () => {
     let id  = this.props.offer.item.id; 
     let id2  = this.props.offer.id;
-    // fetch(`https://corona-backend1.herokuapp.com/api/v1/items/${id}`, {
-      fetch(`http://localhost:3000/api/v1/items/${id}`, {
+    fetch(`https://ironladyback.herokuapp.com/api/v1/items/${id}`, {
+      // fetch(`http://localhost:3000/api/v1/items/${id}`, {
       method: 'PATCH',
       headers: {"Content-Type": "application/json",
                 "Accept": "application/json"},    
@@ -37,8 +37,8 @@ class Offer extends Component {
             else {
                 alert('Offer Successfully accepted')
                 this.props.updateItemPrice(renderData)
-                // fetch(`https://corona-backend1.herokuapp.com/api/v1/offers/${id2}`, {
-                  fetch(`http://localhost:3000/api/v1/offers/${id2}`, {
+                fetch(`https://ironladyback.herokuapp.com/api/v1/offers/${id2}`, {
+                  // fetch(`http://localhost:3000/api/v1/offers/${id2}`, {
                     method: "DELETE"
                 })
                 .then(resp => resp.json())

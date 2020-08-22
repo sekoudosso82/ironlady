@@ -22,7 +22,7 @@ class SignupForm extends React.Component {
 
     if (this.state.password === this.state.passwordConfirmation){
 
-      // fetch("https://corona-backend1.herokuapp.com/api/v1/users", {
+      // fetch("https://ironladyback.herokuapp.com/api/v1/users", {
       fetch("http://localhost:3000/api/v1/users", {
 
         method: "POST",
@@ -44,8 +44,8 @@ class SignupForm extends React.Component {
           this.props.setUser(response)
           let shop = {user_id: response.user.id}
 // create shoppingCart({shoppingCartId: response.user.id})
-          // fetch("https://corona-backend1.herokuapp.com/api/v1/shopping_carts", {
-          fetch("http://localhost:3000/api/v1/shopping_carts", {
+          fetch("https://ironladyback.herokuapp.com/api/v1/shopping_carts", {
+          // fetch("http://localhost:3000/api/v1/shopping_carts", {
           method: 'Post',
           headers: {"Content-Type": "application/json",
                     "Accept": "application/json"},    
@@ -54,8 +54,8 @@ class SignupForm extends React.Component {
           .then(resp=>resp.json())
           .then(data => console.log('shopping cart created',data))
 // create watchlist
-          // fetch("https://corona-backend1.herokuapp.com/api/v1/watchlists", {
-            fetch("http://localhost:3000/api/v1/watchlists", {
+          fetch("https://ironladyback.herokuapp.com/api/v1/watchlists", {
+            // fetch("http://localhost:3000/api/v1/watchlists", {
             method: 'Post',
             headers: {"Content-Type": "application/json",
                       "Accept": "application/json"},    
