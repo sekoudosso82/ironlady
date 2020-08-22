@@ -22,8 +22,8 @@ class SignupForm extends React.Component {
 
     if (this.state.password === this.state.passwordConfirmation){
 
-      // fetch("https://ironladyback.herokuapp.com/api/v1/users", {
-      fetch("http://localhost:3000/api/v1/users", {
+      fetch("https://ironladyback.herokuapp.com/api/v1/users", {
+      // fetch("http://localhost:3000/api/v1/users", {
 
         method: "POST",
         headers: {

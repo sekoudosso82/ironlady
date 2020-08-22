@@ -65,6 +65,8 @@ class LoginForm extends React.Component {
                   <button className="formInput" type="submit">Log In</button>
               </div>
               </div>  
+              <Link to="/signup"><button className="signup">NEW USER SIGN UP</button></Link>
+
           </form>
     
     )
