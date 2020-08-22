@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ironlady/precache-manifest.839a911035dea210a09699654f77c2a4.js"
+  "/ironlady/precache-manifest.8b3e092eecc0adccdec356bc1193e73d.js"
 );
 
 self.addEventListener('message', (event) => {
