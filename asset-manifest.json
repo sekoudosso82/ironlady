@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ironlady/static/css/main.812dd202.chunk.css",
+    "main.js": "/ironlady/static/js/main.b3e75001.chunk.js",
+    "main.js.map": "/ironlady/static/js/main.b3e75001.chunk.js.map",
+    "runtime-main.js": "/ironlady/static/js/runtime-main.08f3a600.js",
+    "runtime-main.js.map": "/ironlady/static/js/runtime-main.08f3a600.js.map",
+    "static/js/2.f234d671.chunk.js": "/ironlady/static/js/2.f234d671.chunk.js",
+    "static/js/2.f234d671.chunk.js.map": "/ironlady/static/js/2.f234d671.chunk.js.map",
+    "index.html": "/ironlady/index.html",
+    "precache-manifest.839a911035dea210a09699654f77c2a4.js": "/ironlady/precache-manifest.839a911035dea210a09699654f77c2a4.js",
+    "service-worker.js": "/ironlady/service-worker.js",
+    "static/css/main.812dd202.chunk.css.map": "/ironlady/static/css/main.812dd202.chunk.css.map",
+    "static/js/2.f234d671.chunk.js.LICENSE.txt": "/ironlady/static/js/2.f234d671.chunk.js.LICENSE.txt",
+    "static/media/bp.jpg": "/ironlady/static/media/bp.7479a9f9.jpg",
+    "static/media/App.css": "/ironlady/static/media/bp3.cd8dd53e.jpg",
+    "static/media/logo.svg": "/ironlady/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08f3a600.js",
+    "static/js/2.f234d671.chunk.js",
+    "static/css/main.812dd202.chunk.css",
+    "static/js/main.b3e75001.chunk.js"
+  ]
+}
