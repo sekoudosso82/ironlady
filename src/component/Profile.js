@@ -3,8 +3,6 @@ import ProfileCart from './ProfileCart'
 import '../App.css';
 import {connect} from 'react-redux'
 import {fetchUsersCreator} from '../reducer'
-
-
 class Profile extends Component {
   
   componentDidMount(){

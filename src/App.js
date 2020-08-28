@@ -102,7 +102,7 @@ class  App extends Component {
         </div>
         : 
         <div>
-            <h1 className="warning"> Please Login or SignUp  </h1>
+            <h1 className=""> Login/SignUp  </h1>
           <Switch>
             <Route path="/signup" render={() => <SignupForm  setUser={this.setUser}/>}/>
             <Route path="/login" render={routerProps => <LoginForm {...routerProps} setUser={this.setUser}/>}/>

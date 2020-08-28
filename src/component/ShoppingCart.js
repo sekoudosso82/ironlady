@@ -3,7 +3,6 @@ import '../App.css';
 import ShoppingCartItem from './ShoppingCartItem'
 import {connect} from 'react-redux' 
 import { fetchShopItemCreator } from '../reducer'
-
 class ShoppingCart extends Component {
   
   renderShoppingCartItems = () => {

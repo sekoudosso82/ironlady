@@ -1,8 +1,6 @@
-import React from 'react';
-
+import React from 'react'
 import '../App.css';
 import logo from '../logo.svg';
-
 
 function Currency() {
   return (

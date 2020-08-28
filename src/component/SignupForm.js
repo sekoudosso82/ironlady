@@ -1,4 +1,5 @@
 import React from 'react'
+import './Login.css'
 
 class SignupForm extends React.Component {
 
@@ -6,8 +7,6 @@ class SignupForm extends React.Component {
     username: "",
     password: "",
     passwordConfirmation: "",
-    // email: '',
-    // phone: '',
     shoppingCartId: null
   }
 
@@ -62,15 +61,10 @@ class SignupForm extends React.Component {
             body: JSON.stringify(shop)
             })
             .then(resp=>resp.json())
-            .then(data => console.log('watchlist cart created',data))
-
-            
-          }
-          
+            .then(data => console.log('watchlist cart created',data)) 
+          }        
         })
-        
-        
-        
+                
       } else {
         alert("Passwords don't match! check for case_sensitive Password should be atlease 3 characters")
       }
@@ -87,7 +81,7 @@ class SignupForm extends React.Component {
     render(){
       return (
         
-        <form className="formLogin" onSubmit={this.handleSubmit}>
+        <form className="" onSubmit={this.handleSubmit}>
           <div class="form-row loginDiv">
             <div>       
               <h1 className='salut'> Hi {this.state.username}</h1>
@@ -116,9 +110,7 @@ class SignupForm extends React.Component {
           </div> 
         </form>
     )
-  }
-  
-  
+  } 
 }
 
 export default SignupForm  

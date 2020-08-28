@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
 import { withRouter } from "react-router";
 import {connect} from 'react-redux'
-
-
 class ShoppingCartItem extends Component {
   render(){
     console.log('delete from shoppingCart props id', this.props.id)             

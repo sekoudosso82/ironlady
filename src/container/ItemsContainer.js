@@ -10,7 +10,6 @@ import ShowSingleItem from '../component/ShowSingleItem';
 import Summary from '../component/Summary';
 import {connect} from 'react-redux' 
 import {fetchItemCreator} from '../reducer'
-
 class  ItemsContainer extends Component {
   
   componentDidMount(){

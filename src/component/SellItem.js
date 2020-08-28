@@ -4,9 +4,6 @@ import { withRouter } from "react-router";
 import {connect} from 'react-redux'
 
 import '../App.css';
-
-
-
 class SellItem extends Component {
   state = {
       title: '',price: '',location: '',
