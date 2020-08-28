@@ -1,12 +1,12 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import './Login.css'
 class LoginForm extends React.Component {
 
   state = {
     username: "",
     password: ""
   }
-
   handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value
@@ -15,9 +15,8 @@ class LoginForm extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-
-    // fetch("https://corona-backend1.herokuapp.com/api/v1/login", {
-    fetch("http://localhost:3000/api/v1/login", {
+    fetch("https://ironladyback.herokuapp.com/api/v1/login", {
+    // fetch("http://localhost:3000/api/v1/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,28 +44,26 @@ class LoginForm extends React.Component {
 
   render(){
     return (
-      
-      
-      <form className="formLogin" onSubmit={this.handleSubmit}>
-              <div class="form-row loginDiv">
-                  <div>
-                    <h1 className='salut'> Hi {this.state.username}</h1>
-                    <input className="form-control loginInput" placeholder="username" className='formInput' name="username" 
+
+      <form className="loginForm" onSubmit={this.handleSubmit}>
+
+                    <h1 className="loginMessage"> Hi {this.state.username}</h1>
+                    <input className="loginFormInput" placeholder="username" name="username" 
                       value={this.state.username} 
                       onChange={this.handleChange}placeholder="username"/>
                     <br></br>
                     <br></br>
-                    <br></br>
-                    <input className="form-control loginInput" placeholder="password" className='formInput' name="password" 
+                    <input className="loginFormInput" placeholder="password" name="password" 
                         value={this.state.password} type="password"  
                         onChange={this.handleChange}placeholder="password"/>
-                  </div>
-              <br></br>
-              <div className="loginSubmit">
-                  <button className="formInput" type="submit">Log In</button>
-              </div>
-              </div>  
-          </form>
+           
+                  <br></br>
+                 
+                      <button className="loginFormInput" type="submit">Log In</button>
+
+              <Link className="loginFormInput" to="/signup"><button >NEW USER SIGN UP</button></Link>
+
+      </form>
     
     )
   }

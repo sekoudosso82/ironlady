@@ -1,0 +1,25 @@
+
+
+.itemCart {
+    box-sizing: border-box;
+    padding: 0.6em 0.8em;
+    color: #999;
+    background: #f7f7f7;
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.9em;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 250px;
+    float: left;
+
+  }
+
+  .itemCart {
+    flex: 1 0 90px;
+    max-width: 400px;
+    margin: 1em;
+	/* margin-right: 2em; */
+}

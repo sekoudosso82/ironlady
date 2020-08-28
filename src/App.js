@@ -23,8 +23,8 @@ class  App extends Component {
     const token = localStorage.token
     
     if(token){
-      // fetch("https://corona-backend1.herokuapp.com/api/v1/auto_login", {
-      fetch("http://localhost:3000/api/v1/auto_login", {
+      fetch("https://ironladyback.herokuapp.com/api/v1/auto_login", {
+      // fetch("http://localhost:3000/api/v1/auto_login", {
 
         headers: { "Authorization": token }
       })
@@ -97,12 +97,13 @@ class  App extends Component {
           <Route path="/allparchaseditems " component={AllPurchasedItems} />
           
           <Route path="/currency" component={Currency} />
+          {/* <Route path="/" render={() => <ItemsContainer />}/>  */}
           
         </Switch>
         </div>
         : 
         <div>
-            <h1 className="warning"> Please Login or SignUp  </h1>
+            <h1 className=""> Login/SignUp  </h1>
           <Switch>
             <Route path="/signup" render={() => <SignupForm  setUser={this.setUser}/>}/>
             <Route path="/login" render={routerProps => <LoginForm {...routerProps} setUser={this.setUser}/>}/>

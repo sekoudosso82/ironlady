@@ -32,8 +32,8 @@ class ProfileCart extends Component {
         }
         let id  = this.props.currentUser.id; 
         console.log(' profile id ', this.props.currentUser.id )             
-        // fetch(`https://corona-backend1.herokuapp.com/api/v1/users/${id}`, {
-            fetch(`http://localhost:3000/api/v1/users/${id}`, {
+        fetch(`https://ironladyback.herokuapp.com/api/v1/users/${id}`, {
+            // fetch(`http://localhost:3000/api/v1/users/${id}`, {
             method: 'PATCH',
             headers: {"Content-Type": "application/json",
                       "Accept": "application/json"},    
@@ -57,24 +57,24 @@ class ProfileCart extends Component {
     handleDelete = () => {
         let id  = this.props.currentUser.id; 
         console.log(' delete profile id ', this.props.currentUser.id )   
-        // fetch(`https://corona-backend1.herokuapp.com/api/v1/watchlists/${id}`, {
-        fetch(`http://localhost:3000/api/v1/watchlists/${id}`, {
+        fetch(`https://ironladyback.herokuapp.com/api/v1/watchlists/${id}`, {
+        // fetch(`http://localhost:3000/api/v1/watchlists/${id}`, {
             method: "DELETE"
         })
         .then(resp => resp.json())
         .then(data => { 
                 console.log('delete watchlist id', data.id)
             
-                // fetch(`https://corona-backend1.herokuapp.com/api/v1/shopping_carts/${id}`, {
-                fetch(`http://localhost:3000/api/v1/shopping_carts/${id}`, {
+                fetch(`https://ironladyback.herokuapp.com/api/v1/shopping_carts/${id}`, {
+                // fetch(`http://localhost:3000/api/v1/shopping_carts/${id}`, {
                 method: "DELETE"
                 })
                 .then(resp => resp.json())
                 .then(data => { 
                     console.log('delete shoppingCart id', data.id)
                 
-                    // fetch(`https://corona-backend1.herokuapp.com/api/v1/users/${id}`, {
-                    fetch(`http://localhost:3000/api/v1/users/${id}`, {
+                    fetch(`https://ironladyback.herokuapp.com/api/v1/users/${id}`, {
+                    // fetch(`http://localhost:3000/api/v1/users/${id}`, {
                         method: "DELETE"
                     })
                     .then(resp => resp.json())

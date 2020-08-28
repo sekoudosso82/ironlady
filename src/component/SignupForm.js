@@ -1,4 +1,5 @@
 import React from 'react'
+import './Login.css'
 
 class SignupForm extends React.Component {
 
@@ -6,8 +7,6 @@ class SignupForm extends React.Component {
     username: "",
     password: "",
     passwordConfirmation: "",
-    // email: '',
-    // phone: '',
     shoppingCartId: null
   }
 
@@ -22,8 +21,8 @@ class SignupForm extends React.Component {
 
     if (this.state.password === this.state.passwordConfirmation){
 
-      // fetch("https://corona-backend1.herokuapp.com/api/v1/users", {
-      fetch("http://localhost:3000/api/v1/users", {
+      fetch("https://ironladyback.herokuapp.com/api/v1/users", {
+      // fetch("http://localhost:3000/api/v1/users", {
 
         method: "POST",
         headers: {
@@ -44,8 +43,8 @@ class SignupForm extends React.Component {
           this.props.setUser(response)
           let shop = {user_id: response.user.id}
 // create shoppingCart({shoppingCartId: response.user.id})
-          // fetch("https://corona-backend1.herokuapp.com/api/v1/shopping_carts", {
-          fetch("http://localhost:3000/api/v1/shopping_carts", {
+          fetch("https://ironladyback.herokuapp.com/api/v1/shopping_carts", {
+          // fetch("http://localhost:3000/api/v1/shopping_carts", {
           method: 'Post',
           headers: {"Content-Type": "application/json",
                     "Accept": "application/json"},    
@@ -54,23 +53,18 @@ class SignupForm extends React.Component {
           .then(resp=>resp.json())
           .then(data => console.log('shopping cart created',data))
 // create watchlist
-          // fetch("https://corona-backend1.herokuapp.com/api/v1/watchlists", {
-            fetch("http://localhost:3000/api/v1/watchlists", {
+          fetch("https://ironladyback.herokuapp.com/api/v1/watchlists", {
+            // fetch("http://localhost:3000/api/v1/watchlists", {
             method: 'Post',
             headers: {"Content-Type": "application/json",
                       "Accept": "application/json"},    
             body: JSON.stringify(shop)
             })
             .then(resp=>resp.json())
-            .then(data => console.log('watchlist cart created',data))
-
-            
-          }
-          
+            .then(data => console.log('watchlist cart created',data)) 
+          }        
         })
-        
-        
-        
+                
       } else {
         alert("Passwords don't match! check for case_sensitive Password should be atlease 3 characters")
       }
@@ -87,7 +81,7 @@ class SignupForm extends React.Component {
     render(){
       return (
         
-        <form className="formLogin" onSubmit={this.handleSubmit}>
+        <form className="" onSubmit={this.handleSubmit}>
           <div class="form-row loginDiv">
             <div>       
               <h1 className='salut'> Hi {this.state.username}</h1>
@@ -116,9 +110,7 @@ class SignupForm extends React.Component {
           </div> 
         </form>
     )
-  }
-  
-  
+  } 
 }
 
 export default SignupForm  

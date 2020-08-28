@@ -1,12 +1,7 @@
 import React, {Component} from 'react';
-
 import '../App.css';
 import ItemCart from './ItemCart' 
 import {connect} from 'react-redux' 
-
-
-
-
 class Items extends Component {
     
     renderItems = () => {
@@ -27,8 +22,6 @@ class Items extends Component {
                 DeleteItem={this.props.DeleteItem} />) 
     }
                 
-    
-
     render(){
         return (
             <div className="App topDiv">

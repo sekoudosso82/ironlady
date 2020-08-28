@@ -4,10 +4,6 @@ import '../App.css';
 import WatchlistItem from './WatchlistItem'
 import {connect} from 'react-redux'
 import { fetchWatchlistCreator } from '../reducer'
-
-
-
-
 class Watchlist extends Component {
   
   renderWatchlistItems = () => {

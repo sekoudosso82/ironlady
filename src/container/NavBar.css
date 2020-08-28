@@ -1,0 +1,68 @@
+.mainNavBar {
+	display: flex;
+	flex-wrap: wrap;
+    margin-right: -2em;
+    width:100%;
+    background: #f7f7f7;
+
+}
+.navBarSubDiv {
+    flex: 1 0 300px;
+	max-width: 400px;
+	margin-right: 2em;
+}
+
+.navBarSubDivStyle {
+    box-sizing: border-box;
+    padding: 0.6em 0.8em;
+    color: #999;
+    /* border: 1px solid #C17CCF; */
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.9em;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 3em;
+  }
+  .navBarSubDivStyle:hover, .navBarSubDivStyle:focus {
+	background: #C17CCF;
+}
+.navBarSubDivStyle:after{
+    -webkit-transition: 5s;
+    transition: 5s;    
+     }
+
+.navBarSpan {
+    background: greenyellow;
+    text-transform: uppercase;
+    /* width: 50%; */
+    animation: text 15s 1;
+}
+@keyframes text{
+    0%{
+    color: #6ab04c;
+    margin-bottom: -40px;
+        }
+    30%{
+    letter-spacing: 2px;
+    margin-bottom: -40px;
+        }
+    85%{
+    letter-spacing: 2px;
+    margin-bottom: -40px;
+        }    
+}    
+
+
+@media (max-width: 400px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 2em;
+    }
+    header, .form-submit {
+        padding: 2% 5%;
+    }
+}
