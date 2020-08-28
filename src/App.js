@@ -97,6 +97,7 @@ class  App extends Component {
           <Route path="/allparchaseditems " component={AllPurchasedItems} />
           
           <Route path="/currency" component={Currency} />
+          <Route path="/" render={() => <ItemsContainer />}/> 
           
         </Switch>
         </div>
