@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ironlady/static/css/main.0fa63c3c.chunk.css",
-    "main.js": "/ironlady/static/js/main.abf186a5.chunk.js",
-    "main.js.map": "/ironlady/static/js/main.abf186a5.chunk.js.map",
-    "runtime-main.js": "/ironlady/static/js/runtime-main.08f3a600.js",
-    "runtime-main.js.map": "/ironlady/static/js/runtime-main.08f3a600.js.map",
-    "static/js/2.cf14219d.chunk.js": "/ironlady/static/js/2.cf14219d.chunk.js",
-    "static/js/2.cf14219d.chunk.js.map": "/ironlady/static/js/2.cf14219d.chunk.js.map",
-    "index.html": "/ironlady/index.html",
-    "precache-manifest.9ac51d407634c31bbeed1c8c7c25e774.js": "/ironlady/precache-manifest.9ac51d407634c31bbeed1c8c7c25e774.js",
-    "service-worker.js": "/ironlady/service-worker.js",
-    "static/css/main.0fa63c3c.chunk.css.map": "/ironlady/static/css/main.0fa63c3c.chunk.css.map",
-    "static/js/2.cf14219d.chunk.js.LICENSE.txt": "/ironlady/static/js/2.cf14219d.chunk.js.LICENSE.txt",
-    "static/media/bp.jpg": "/ironlady/static/media/bp.7479a9f9.jpg",
-    "static/media/App.css": "/ironlady/static/media/bp3.cd8dd53e.jpg",
-    "static/media/logo.svg": "/ironlady/static/media/logo.5d5d9eef.svg"
+    "main.css": "/static/css/main.74a9f705.chunk.css",
+    "main.js": "/static/js/main.abf186a5.chunk.js",
+    "main.js.map": "/static/js/main.abf186a5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a520815d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a520815d.js.map",
+    "static/js/2.cf14219d.chunk.js": "/static/js/2.cf14219d.chunk.js",
+    "static/js/2.cf14219d.chunk.js.map": "/static/js/2.cf14219d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e00fe6f892c68f12c64616a85e90c6c5.js": "/precache-manifest.e00fe6f892c68f12c64616a85e90c6c5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.74a9f705.chunk.css.map": "/static/css/main.74a9f705.chunk.css.map",
+    "static/js/2.cf14219d.chunk.js.LICENSE.txt": "/static/js/2.cf14219d.chunk.js.LICENSE.txt",
+    "static/media/bp.jpg": "/static/media/bp.7479a9f9.jpg",
+    "static/media/App.css": "/static/media/bp3.cd8dd53e.jpg",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.08f3a600.js",
+    "static/js/runtime-main.a520815d.js",
     "static/js/2.cf14219d.chunk.js",
-    "static/css/main.0fa63c3c.chunk.css",
+    "static/css/main.74a9f705.chunk.css",
     "static/js/main.abf186a5.chunk.js"
   ]
 }
