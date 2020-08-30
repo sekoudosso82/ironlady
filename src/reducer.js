@@ -179,5 +179,3 @@ function reducer (prevState=initialState, action){
     }
 } 
 export default reducer 
-// console.log('reducer shoppingCartItems length ', prevState.shoppingCartItems.length.length)
-// console.log('reducer shopItem number', prevState.shopItemNum)
