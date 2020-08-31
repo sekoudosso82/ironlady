@@ -268,48 +268,6 @@
   padding-top: 10%;
 }
 
-
-/* shopping cart  */
-.shopppingCardCardDiv{
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  line-height: 18px;
-  overflow: auto;
-  padding: 2px;
-  width: 30%;
-  height: 100%;
-  float: left;
-  text-align: center;
-  margin-left: 2%;
-  margin-top: 20px;
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  position: fixed;
-  /* background-color: red; */
-  /* top: 5%; */
-}
-.shopppingCardCardDiv1{
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  line-height: 18px;
-  overflow: auto;
-  padding: 2px;
-  width: 30%;
-  height: 100%;
-  float: right;
-  text-align: center;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 20px;
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  /* position: absolute; */
-  /* background-color:white; */
-  /* top: 5%; */
-}
-
 .shopppingCarditem{
   
   background-color: #f0f7fb;

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css';
+import './shopingCart.css'
 import ShoppingCartItem from './ShoppingCartItem'
 import {connect} from 'react-redux' 
 import { fetchShopItemCreator } from '../reducer'
@@ -7,12 +8,9 @@ class ShoppingCart extends Component {
   
   renderShoppingCartItems = () => {
     console.log('shoppingCart props********. shoppingCartItems in render', this.props.shoppingCartItems)
-    
     return this.props.shoppingCartItems
     .filter(item => item.shopping_cart_id === this.props.currentUser.id)
-    .map(item => <ShoppingCartItem  key={item.id} {...item} />            
-    )
- 
+    .map(item => <ShoppingCartItem  key={item.id} {...item} />)
   }
 
   items = () => {
@@ -74,11 +72,12 @@ class ShoppingCart extends Component {
     console.log('shoppingCart props********. shoppingCartItems', this.props.shoppingCartItems)
     return (
       <div className="App ">
-          <h1>Items in shoppingCart</h1>
-          <div className="shopppingCardCardDiv">
+        <h1>Items in shoppingCart</h1>
+        <div className="shopCartMainDiv shopCartMainDiv_flex">
+          <div className=" div_group div_group_flex">
               {this.renderShoppingCartItems()} 
           </div>
-          <div className="shopppingCardCardDiv1">
+          <div className=" div_group div_group_flex">
             <div className="card text-white bg-primary mb-3 sticky-top" >
               <div className="card-header bg-transparent border-success">Go to checkout</div>
               <div className="card-body text-success checkoutDivBody  ">
@@ -87,12 +86,15 @@ class ShoppingCart extends Component {
                 <p className="checkoutDivBodyP">Shipping address: {this.props.currentUser.email}</p>
                 <p className="checkoutDivBodyP">Estimated tax   :  ${this.estimatedtaxxxx()}</p>
               </div>
-              <div className="card-footer bg-transparent border-success">Total : {this.totalToPay()}</div>
+              <div className="card-footer bg-transparent border-success">
+                Total : {this.totalToPay()}
+              </div>
             </div>
               <br></br>
               <br></br>
               <button type="button" class="btn btn-info" onClick={this.handleCheckout}>Checkout</button>
-          </div>
+          </div>          
+        </div>
       </div>
     );
 }}

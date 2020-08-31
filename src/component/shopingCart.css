@@ -1,0 +1,61 @@
+/* shopping cart  */
+.shopppingCardCardDiv{
+    display: block;
+    box-sizing: border-box;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    line-height: 18px;
+    overflow: auto;
+    padding: 2px;
+    /* width: 30%;
+    height: 100%; */
+    /* float: left; */
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 20px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    position: fixed;
+    
+}
+
+.shopppingCardCardDiv1{
+    display: block;
+    box-sizing: border-box;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    line-height: 18px;
+    overflow: auto;
+    padding: 2px;
+    /* width: 30%;
+    height: 100%; */
+    /* float: right; */
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 20px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+.shopCartMainDiv{
+    display: flex;
+	flex-wrap: wrap;
+}
+
+.div_group {
+	background: #F6DDCE;
+	margin-bottom: 1em;
+	padding: 10px;
+}
+/* flex zone  */
+.shopCartMainDiv_flex {
+	display: flex;
+    flex-wrap: wrap;
+	margin-right: -2em;
+}
+.div_group_flex {
+	flex: 1 0 150px;
+}
