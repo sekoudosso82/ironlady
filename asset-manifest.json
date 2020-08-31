@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ironlady/static/css/main.0fa63c3c.chunk.css",
-    "main.js": "/ironlady/static/js/main.59d7056c.chunk.js",
-    "main.js.map": "/ironlady/static/js/main.59d7056c.chunk.js.map",
+    "main.css": "/ironlady/static/css/main.beaedd68.chunk.css",
+    "main.js": "/ironlady/static/js/main.94b713ab.chunk.js",
+    "main.js.map": "/ironlady/static/js/main.94b713ab.chunk.js.map",
     "runtime-main.js": "/ironlady/static/js/runtime-main.08f3a600.js",
     "runtime-main.js.map": "/ironlady/static/js/runtime-main.08f3a600.js.map",
     "static/js/2.10622e17.chunk.js": "/ironlady/static/js/2.10622e17.chunk.js",
     "static/js/2.10622e17.chunk.js.map": "/ironlady/static/js/2.10622e17.chunk.js.map",
     "index.html": "/ironlady/index.html",
-    "precache-manifest.717be14a19e954b73f7dfd0569ae2ed2.js": "/ironlady/precache-manifest.717be14a19e954b73f7dfd0569ae2ed2.js",
+    "precache-manifest.48912280ba402c598f769663ec19cebf.js": "/ironlady/precache-manifest.48912280ba402c598f769663ec19cebf.js",
     "service-worker.js": "/ironlady/service-worker.js",
-    "static/css/main.0fa63c3c.chunk.css.map": "/ironlady/static/css/main.0fa63c3c.chunk.css.map",
+    "static/css/main.beaedd68.chunk.css.map": "/ironlady/static/css/main.beaedd68.chunk.css.map",
     "static/js/2.10622e17.chunk.js.LICENSE.txt": "/ironlady/static/js/2.10622e17.chunk.js.LICENSE.txt",
     "static/media/bp.jpg": "/ironlady/static/media/bp.7479a9f9.jpg",
     "static/media/App.css": "/ironlady/static/media/bp3.cd8dd53e.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.08f3a600.js",
     "static/js/2.10622e17.chunk.js",
-    "static/css/main.0fa63c3c.chunk.css",
-    "static/js/main.59d7056c.chunk.js"
+    "static/css/main.beaedd68.chunk.css",
+    "static/js/main.94b713ab.chunk.js"
   ]
 }
